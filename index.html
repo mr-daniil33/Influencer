@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="header__menu" id="headerMenu">
+            <ul>
+                <li><a href="#">For Business</a></li>
+                <li><a href="#">For Customers</a></li>
+            </ul>
+        </nav>
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="images/logo.svg" alt="логотип">
+                <a>budds</a>
+            </div>
+            <button class="contactBtn header__button" id="contactBtn">Contact sales</button>
+            <img src="images/burger.svg" class="header__burger" alt="иконка списка">
+        </div>
+    </header>
+    <dialog id="popUp">
+        <form method="dialog" class="modal" id="contactForm" name="contactForm">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name" placeholder="Enter name">
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" placeholder="Enter email" >
+            <label for="phoneNumber" class="required">Phone Number</label>
+            <input type="tel" class="tel" id="phoneNumber" placeholder=" +7 (000) 000 0000 " >
+            <label for="company">Company</label>
+            <input type="text" placeholder="Enter company" id="company">
+            <label for="website">Website/Store URL</label>
+            <input type="url" placeholder="Enter Website/Store URL" id="website">
+
+            <p>By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+
+            <button type="submit" class="contactBtn modalBtn lightBack">Contact sales</button>
+        </form>
+    </dialog>
+    <dialog id="success">
+        <div class="success">
+        <img src="images/close.svg" class="closeBtn" id="closeBtn" alt="крестик">
+        <img src="images/success.svg" alt="палец вверх">
+        <span>Thank you!</span>
+        <p>Thank you, we have received your application and will contact you soon!</p>
+        <button class="successBtn lightBack" id="successBtn">Super!</button>
+    </div>
+    </dialog>
+    <main>
+        <section class="hero">
+            <div class="hero__description">
+                <h1>Everyone is an Influencer</h1>
+                <p>Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
+                <button class="contactBtn hero__button">Contact sales</button>
+            </div>
+            <div class="hero__banner">
+                
+                <picture>
+                    <source srcset="images/girl-banner.png, images/girl-banner@2x.png 2x">
+                    <img src="images/girl-banner.png" alt="баннер с девушкой">
+                </picture>
+            </div>
+        </section>
+        <section class="about">
+            <h1>About Budss</h1>
+            <div class="about__wrapper">
+                <div class="about__description">
+                    <p>Payment as a service, powered seamlessly by our network of shoppers</p>
+                    <img src="images/network-back.svg" class="descriptionImg" alt="задник network">
+                    <img src="images/about-back.svg" class="backgroundImg" alt="векторная абстракция">
+                </div>
+                <div class="about__benefits">
+                    <ul class="about__benefitsList">
+                        <li>
+                            <img src="images/contactless.svg" alt="иконка элемента списка">
+                            <h3>Contactless</h3>
+                            <p>Budss uses near field communication (NFC) for making contactless payments.</p>
+                        </li>
+                        <li>
+                            <img src="images/power.svg" alt="иконка элемента списка">
+                            <h3>Increased Buying Power</h3>
+                            <p>Returning customers spend up to 3X more.</p>
+                        </li>
+                        <li>
+                            <img src="images/analytics.svg" alt="иконка элемента списка">
+                            <h3>Analytics & Insights</h3>
+                            <p>Gain a holistic view into your customers’ buying behavior & purchasing patterns. </p>
+                        </li>
+                        <li>
+                            <img src="images/fraud.svg" alt="иконка элемента списка">
+                            <h3>Fraud Protection</h3>
+                            <p>Budss handles all payments with a fraud prevention algorithm to flag high risk purchases & a user set PIN code to keep payment info secure. </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="howWorks">
+            <span class="howWorks-blue">How Budss Works</span>
+            <span class="howWorks-purple">How Budss Works</span>
+            <span class="howWorks-orange">How Budss Works</span>
+            <picture>
+                <source srcset="images/howWorks.png, images/howWorks@2x.png 2x">
+                <img src="images/howWorks.png" alt="смартфон">
+            </picture>
+        </div>
+        <section class="reasons">
+            <div class="reasons__statistics">
+                <div class="reasons__statistics__item">
+                    <span>15%</span>
+                    <p>Increase in Purchase Amount</p>
+                </div>
+                <div class="reasons__statistics__item">
+                    <span>30%</span>
+                    <p>Growth in Annual Sales</p>
+                </div>
+                <div class="reasons__statistics__item">
+                    <span>10%</span>
+                    <p>Growth in New  Customers</p>
+                </div>
+            </div>
+            <div class="reasons__headling">
+                <h2>Why Budss</h2>
+                <p>We Provide Advanced Payment Solutions To Grow Your Business</p>
+                <img src="images/grow-back.svg" class="reasonImg" alt="задник grow">
+            </div>
+            <ul class="reasons__list">
+                <li class="reasons__item">
+                    <img src="images/reason1.svg" alt="смартфон с графикой">
+                    
+                    <div class="reasons__item-wrapper">
+                    <h3>Turn your customers into loyal influencers</h3>
+                    <p>Budss helps businesses harness the exponential power of loyal customers for acquisition and retention.</p>
+                    </div>
+                    <img src="images/reason1-mobile.svg" alt="смартфон с графикой">
+                </li>
+                <li class="reasons__item">
+                    <h3>Harness the power of buying in bulk</h3>
+                    <p>Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your customers add their friends & family to your personalized group.</p>
+                    <img src="images/pocket1.svg" class="greenPocket" alt="зеленый пакет">
+                    <img src="images/pocket2.svg" class="orangePocket" alt="оранжевый пакет">
+                    <img src="images/pocket3.svg" class="purplePocket" alt="фиолетовый пакет">
+                </li>
+                <li class="reasons__item">
+                    <h3>Supercharge Loyalty With Instant Cash Back</h3>
+                    <p>Budss allows for shoppers to earn immediate cash back at their favorite stores.</p>
+                    <img src="images/thumbUp.svg" alt="палец вверх">
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__item-wrapper">
+                    <h3>Seasoned with AI and Gamification</h3>
+                    <p>AI programming creates a personalized customer journey, offering recommendations for their next purchase and optimizing rewards for after purchase.</p>
+                    </div>
+                    <img src="images/reason4.svg" alt="пользователь со смартфоном">
+                </li>
+            </ul>
+        </section>
+        <section class="grow">
+            <div class="grow__headling">
+                <h2>Let  Your Business Grow</h2>
+                <button class="contactBtn lightBack">Contact sales</button>
+            </div>
+            <div class="grow__wrapper">
+                <div class="grow__description">
+                <h1>Your Brand Awareness Maters</h1>
+                <p>Budss is a husle free solution to put your brand on any digital surface including Instagram, Facebook, Twitter and TikTok</p>
+                </div>
+                <div class="grow__social">
+                    <div class="grow__social__row">
+                        <img src="images/facebook.svg" alt="лого фейсбука">
+                        <img src="images/instagram.svg" alt="лого инстаграма">
+                    </div>   
+                    <div class="grow__social__row">
+                        <img src="images/twitter.svg" alt="лого твиттера">
+                        <img src="images/tiktok.svg" alt="лого тиктока">
+                    </div>
+                    </div>
+            </div>
+            <div class="grow__companies">
+                <img src="images/woo.svg" alt="лого wooCommerce">
+                <img src="images/shopify.svg" alt="лого shopify">
+                <img src="images/square.svg" alt="лого square">
+                <img src="images/space.svg" alt="лого squareSpace">
+                <img src="images/clover.svg" alt="лого clover">
+            </div>
+            <div class="grow__companies-mobile">
+                <img src="images/square.svg" alt="лого square">
+                <img src="images/shopify.svg" alt="лого shopify">
+                <img src="images/woo.svg" alt="лого wooCommerce">
+                <img src="images/space.svg" alt="лого squareSpace">
+                <img src="images/clover.svg" alt="лого clover">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="images/logo.svg" alt="логотип">
+                <a>budds</a>
+            </div>
+            <nav class="footer__menu">
+                <ul>
+                    <li><a href="#">For Business</a></li>
+                    <li><a href="#">For Customers</a></li>
+                    <li><a href="#" class = 'footer__menu-item'>Privacy Policy</a></li>
+                    <li><a href="#" class = 'footer__menu-item'>Terms Of Use - Seller</a></li>
+                    <li><a href="#" class = 'footer__menu-item'>Terms of Use - Sellers & Customers</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="footer__links">
+                <button class="contactBtn footer__button" id="contactBtn">Contact sales</button>
+                <div class="footer__download">
+                    <button class="appleBtn"></button>
+                    <button class="googleBtn"></button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer__copyright">
+            <small>© Copyright 2023, All Rights Reserved by Budss</small>
+            <div class="footer__copyright__terms">
+                <small>Privacy Policy</small>
+                <small>Terms Of Use - Seller</small>
+                <small>Terms of Use - Sellers & Customers</small>
+            </div>    
+        </div>
+    </footer>
+<div class="warning" id="warning">
+    <img src="images/close.svg" class="closeBtn" id="closeCookieBtn" alt="крестик">
+    <p>This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+    <div class="warning__buttons">
+        <button class=" acceptBtn" id="acceptBtn">Accept</button>
+        <button class=" declineBtn" id="declineBtn">Decline</button>
+    </div>
+    
+</div>
+<script src="js/popup.js"></script>
+</body>
+</html>
