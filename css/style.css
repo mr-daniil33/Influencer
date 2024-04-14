@@ -647,7 +647,7 @@
 
 
 .modal {
-    position: relative;
+   
     max-width: 417px;
     border-radius: 20px;
     display: flex;
@@ -661,16 +661,7 @@
     
 }
 
-.modal::before {
-    position: absolute;
-    content: url(/images/russian-federation.svg);
-    display: block;
-    left: 56px;
-    top: 223px;
-    width: 22px;
-    height: 16px;
-    
-}
+
 
 .modal label {
     display: inline-block;
@@ -1368,11 +1359,5 @@
 .acceptBtn:hover, .declineBtn:hover {
     transform: scale(1.05);
     transition: all .2s ease-in-out;
-}
-
-.modal .tel {
-   
-    padding-left: 48px;
-  
 }
 
